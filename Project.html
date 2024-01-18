@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    width: 100%;
+    height: 100%;
+    background: #C9CCD3;
+   background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+   background-blend-mode: lighten; 
+}
+.header1{
+    margin: 0 auto;
+    overflow: hidden;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    align-items: center;
+    max-width: 800px;
+    height: 7.98rem;
+}
+.first_para{
+    max-width: 400px;
+    text-align: center;  
+}
+@media (max-width:300px) {
+    .first_para{
+        overflow: scroll;
+        height: 100px;
+    }
+}
+@media (max-width:220px) {
+    .first_para{
+        opacity: 0;
+    }
+}
+@media (max-width:116px) {
+    .first_head{
+        font-size: small;
+    }
+}
+@media (max-width:60px) {
+    .first_head{
+        font-size: 0.5rem;
+    }
+}
+.main1{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    object-fit: cover;
+}
+.blog1{
+   position: relative;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   /* aspect-ratio: 21/9; */
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.first_image{
+    object-fit: cover;
+    object-position: center;
+    overflow-x: hidden;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: cover;
+    border-top-right-radius: cover;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0ms;
+}
+.bord1{
+     height: 40%;
+     overflow: hidden;
+}
+.first_image:hover{
+    transform: scale(1.3);
+}
+@media (max-width:233px) {
+    .blog1{
+        width: auto;
+    }
+}
+#head1{
+    text-decoration: none;
+    font-size: 0.96rem;
+    color: rgba(0, 0, 0, 0.788); 
+}
+h4{
+    font-size: large;
+}
+.one{
+    position: relative;
+    padding: 0rem 1rem;
+}
+.two{
+    padding: 0rem 1rem;
+    position: relative;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0rem;
+    padding: 0rem 1rem;
+    /* border: 2px solid black; */
+}
+#img1{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+#firstButton{
+    width: 60px;
+    color:white;
+    background-color: #555555;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-left: 0.3rem;
+}
+.blog2{
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.blog3{
+    position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.blog4{
+     position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.container1{
+    padding: 0.55rem;
+    overflow-wrap: normal;
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.blog5{
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.container2{
+    padding: 0.55rem; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.blog6{
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.blog7{
+     position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.blog8{
+      position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   border-radius: 1rem;
+   height: 20rem;
+   width: 14rem;
+   border: 1px solid black;
+   box-shadow: 4px 0px 5px brown,-4px 0px 5px brown;
+   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+@media screen and (max-width:1004px) {
+    .container1{
+        flex-wrap: wrap;
+    }
+    .container2{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:190px) {
+    .footer{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:220px) {
+   h4{
+       font-size: 16px;
+   }
+   .two{
+    font-size: 15px;
+   }
+}
+@media (max-width:200px) {
+     h4{
+       font-size: 13px;
+   }
+   .two{
+    font-size: 12px;
+   }
+}
+@media (max-width:170px) {
+     h4{
+       font-size: 10px;
+   }
+   .two{
+    font-size: 9px;
+   }
+}
+@media (max-width:110px) {
+     h4{
+       font-size: 7px;
+   }
+   .two{
+    opacity: 0;
+   }
+}
+@media (max-width:70px) {
+    h4{
+        opacity: 0;
+
+    }
+    .footer{
+        opacity: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header1">
+       <h2 class="first_head">Knowledge Blog</h2>
+       <p class="first_para">Dive into the boundless sea of information with Knowledge, your digital hub for all things knowledge. </p>
+    </header>
+    <main class="main1">
+        <div class="container1">
+            <div class="blog1">
+                <div class="bord1">
+                <img src="https://static.wixstatic.com/media/dccc21_1bcac90d11f2484d968884ae7397770b~mv2.jpg/v1/fill/w_263,h_197,fp_0.50_0.50,q_90,enc_auto/dccc21_1bcac90d11f2484d968884ae7397770b~mv2.jpg" class="first_image">
+                </div>
+                <div class="one">
+                    <a href="#" id="head1"><h4> SEO Tools to Boost Your Sales</h4></a>
+                </div>
+                <div class="two">
+                     <p id="para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>4.5k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>500</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="blog2">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_830e8da378ac4176ae779b1fd2eec443~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90,enc_auto/2e2a49_830e8da378ac4176ae779b1fd2eec443~mv2.jpg" class="first_image">
+                </div>
+                <div class="one">
+                    <a href="#" id="head1"><h4>How to Get Testimonials to Grow Your Business</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                 <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>7.9k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>667</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+            <div class="blog3">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_f881e58e37804a2ba5acc65eee4550c6~mv2.jpg/v1/fill/w_263,h_197,fp_0.50_0.50,q_90,enc_auto/2e2a49_f881e58e37804a2ba5acc65eee4550c6~mv2.jpg" class="first_image">
+                </div>
+                <div class="one">
+                    <a href="#" id="head1"><h4>5 Ways to Stand Out From Your Competitors</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>17.9k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>909</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+            <div class="blog4">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_c43c11966fef41f08f20f74bf0233a33~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90,enc_auto/2e2a49_c43c11966fef41f08f20f74bf0233a33~mv2.jpg" class="first_image">
+                </div>
+                 <div class="one">
+                    <a href="#" id="head1"><h4>Making Friends With Numbers - Data Is Sexy</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>11.6k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>879</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="blog5">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_02f67a25963b4be2baf8fcde7e4fe127~mv2.jpg/v1/fill/w_263,h_197,fp_0.50_0.50,q_90,enc_auto/2e2a49_02f67a25963b4be2baf8fcde7e4fe127~mv2.jpg" class="first_image">
+                </div>
+                <div class="one">
+                    <a href="#" id="head1"><h4>Writing a Post People Actually Read</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>3.6k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>779</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+            <div class="blog6">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_864c9b4a28d84e8fb5e5ef0102b39476~mv2.jpg/v1/fill/w_263,h_197,fp_0.50_0.50,q_90,enc_auto/2e2a49_864c9b4a28d84e8fb5e5ef0102b39476~mv2.jpg" class="first_image">
+                </div>
+                <div class="one">
+                    <a href="#" id="head1"><h4>Great Marketing With Zero Budget</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>8.8k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>979</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+            <div class="blog7">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_4e91a62ac1f9489b92a700a158318470~mv2.png/v1/fill/w_292,h_219,fp_0.50_0.50,q_95,enc_auto/2e2a49_4e91a62ac1f9489b92a700a158318470~mv2.png" class="first_image">
+                </div>
+                 <div class="one">
+                    <a href="#" id="head1"><h4>Press Kit - The Must Have List</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>8.8k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>979</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+            <div class="blog8">
+                <div class="bord1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90,enc_auto/2e2a49_a44bb315fe0e4ef4b04c683eb71debc3~mv2.jpg" class="first_image">
+                </div>
+                 <div class="one">
+                    <a href="#" id="head1"><h4>Finding Ideas for Your Next Podcast</h4></a>
+                </div>
+                <div class="two">
+                        <p id="Para1">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...</p>
+                </div>
+                <div class="footer">
+                        <div class="footer1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/159/159604.png" id="img1">    
+                            <span>6.8k</span>
+                        </div>
+                        <div class="footer2">
+                           <img src="https://cdn-icons-png.flaticon.com/128/1380/1380338.png" id="img1">
+                            <span>490</span>
+                        </div>
+                        <div class="footer3">
+                            <button id="firstButton">Follow</button>
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
