@@ -206,6 +206,23 @@
     max-width: 70%;
     max-height: 80%;
     object-fit: cover;
+    animation-name: rightMove;
+    animation-duration: 1s;
+    animation-timing-function: calc(1,1,1,1);
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+}
+@keyframes rightMove {
+    0%{
+        transform: translate(300px);
+        opacity: 0;
+     }
+     100%{
+        transform: translate(0%);
+        opacity: 1;
+     }
 }
 #bumbell_image{
    height: 100%;
